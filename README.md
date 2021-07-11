@@ -63,9 +63,10 @@ sudo su -
 kubectl create ns test
 kubectl get ns
 kubectl create deploy go-helloworld --image=muktadiur/go-helloworld:v1.0.0 -r=3 -n test
-kubectl get deploy
+kubectl get deploy -n test
+kubectl get pods -n test
 kubectl expose deploy go-helloworld --port=6111 -n test
-kubectl get svc
+kubectl get svc -n test
 kubectl get svc go-helloworld -n test -o yaml > go-helloworld-nodeport.yaml
 # Update type: ClusterIP to type: NodePort and add nodePort: 30020
 kubectl apply -f go-helloworld-nodeport.yaml
