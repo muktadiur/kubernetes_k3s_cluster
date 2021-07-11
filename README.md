@@ -40,6 +40,8 @@ vagrant ssh opensusevm1
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--node-ip=192.168.56.41 --flannel-iface=eth1" sh -
 sudo su -
 zypper install -t pattern apparmor
+# get token
+cat /var/lib/rancher/k3s/server/token
 
 vagrant ssh opensusevm2
 curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--node-ip=192.168.56.42 --flannel-iface=eth1" \
