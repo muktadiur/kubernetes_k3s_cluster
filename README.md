@@ -1,6 +1,6 @@
 Kubernetes cluster with K3s
 ===============================================
-Bootstrapping kubernetes cluster with k3s, opensuse, vagrant, virtualbox and deploy a go application
+Bootstrapping kubernetes cluster with K3s, openSUSE, Vagrant, Virtualbox and deploy a go application
 
 
 Prerequisites
